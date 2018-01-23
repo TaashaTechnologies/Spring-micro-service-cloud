@@ -12,10 +12,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableEurekaClient
 @EnableHystrixDashboard
 @EnableTurbine
-public class TestHystrickApplication extends WebSecurityConfigurerAdapter{
+public class PortalApplication extends WebSecurityConfigurerAdapter{
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestHystrickApplication.class, args);
+		SpringApplication.run(PortalApplication.class, args);
 	}
 
 	@Override
