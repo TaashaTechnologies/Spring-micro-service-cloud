@@ -1,15 +1,7 @@
-/**
- * 
- */
 package com.taasha.microservice.dtos;
 
 import com.taasha.microservice.model.CommentCollectionResource;
 
-/**
- * Represents Todo Task.
- *
- * @author anilallewar
- */
 public class TaskDTO {
 
 	/** The task id. */
@@ -192,5 +184,5 @@ public class TaskDTO {
 		return "TaskDTO [taskId=" + taskId + ", description=" + description + ", completed=" + completed + ", userName="
 				+ userName + ", comments=" + comments + "]";
 	}
-
+	
 }

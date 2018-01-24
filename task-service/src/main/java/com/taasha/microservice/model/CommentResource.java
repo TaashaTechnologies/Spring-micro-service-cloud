@@ -11,11 +11,7 @@ import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-/**
- * Represents comments on Task.
- *
- * @author anilallewar
- */
+
 public class CommentResource {
 
 	public static final String JP_TASKID = "taskId";
@@ -177,4 +173,5 @@ class CustomDateToStringSerializer extends JsonSerializer<Date> {
 		String dateString = dateFormat.format(value);
 		jgen.writeString(dateString);
 	}
+	
 }

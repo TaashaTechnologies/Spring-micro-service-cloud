@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.taasha.microservice.model;
 
 import java.io.IOException;
@@ -15,20 +12,11 @@ import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
-/**
- * @author anilallewar
- *
- */
 @JsonDeserialize(using = CommentsCollectionDeserializer.class)
 public class CommentCollectionResource {
+	
 	private List<CommentResource> taskComments;
-
-	/**
-	 * Adds the comment.
-	 *
-	 * @param comment
-	 *            the comment
-	 */
+	
 	public void addComment(CommentResource comment) {
 		if (this.taskComments == null) {
 			this.taskComments = new ArrayList<>();
@@ -125,4 +113,5 @@ class CommentsCollectionDeserializer extends JsonDeserializer<CommentCollectionR
 		return commentArrayResource;
 
 	}
+
 }

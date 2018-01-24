@@ -12,16 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.taasha.microservice.dtos.TaskDTO;
 
-/**
- * REST endpoint for the task functionality
- * 
- * @author anilallewar
- *
- */
 @RestController
 @RequestMapping("/")
 public class TaskController {
-
+	
 	@Autowired
 	private CommentsService commentsService;
 
@@ -78,4 +72,6 @@ public class TaskController {
 
 		return taskListToReturn;
 	}
+	
+	
 }
