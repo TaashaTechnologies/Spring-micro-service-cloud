@@ -19,6 +19,7 @@ public class GatewayApplication extends WebSecurityConfigurerAdapter{
 		SpringApplication.run(GatewayApplication.class, args);
 	}
 	
+
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 		// @formatter:off
