@@ -35,3 +35,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eurekaregistry:8761/eureka/
+      
+      

@@ -18,8 +18,8 @@ public class CommentsService {
 
 	private static final Logger LOGGER = Logger.getLogger(CommentsService.class.getName());
 	
-	@Autowired
-	private OAuth2RestTemplate restTemplate;
+	/*@Autowired
+	private OAuth2RestTemplate restTemplate;*/
 	
 	@HystrixCommand(fallbackMethod = "getFallbackCommentsForTask", commandProperties = {
 			@HystrixProperty(name = "execution.isolation.strategy", value = "SEMAPHORE"),
@@ -45,8 +45,10 @@ public class CommentsService {
 		if (LOGGER.isLoggable(Level.INFO)) {
 			LOGGER.info(String.format("Checking comments for taskId [%s]", taskId));
 		}
-		return restTemplate.getForObject(String.format("http://comments-webservice/comments/%s", taskId),
-				CommentCollectionResource.class);
+		return null;
+		
+		/*restTemplate.getForObject(String.format("http://comments-webservice/comments/%s", taskId),
+				CommentCollectionResource.class);*/
 	}
 	
 	@SuppressWarnings("unused")

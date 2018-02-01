@@ -30,7 +30,7 @@ import com.taasha.microservice.service.JdbcUserDetailsService;
  * and define the client that seeks authorization on the resource owner's
  * behalf.
  * 
- * @author anilallewar
+ *
  */
 
 @Configuration
