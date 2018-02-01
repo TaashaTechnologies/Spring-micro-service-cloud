@@ -6,7 +6,7 @@ server:
 
 security:
   user:
-    password: Ashapurasoftech_1234
+    password: root
 
 logging:
   level:
@@ -18,7 +18,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/auth
     username: root
-    password: Ashapurasoftech_1234
+    password: root
     driver-class: com.mysql.jdbc.Driver
 
   jpa:
